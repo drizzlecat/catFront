@@ -1,0 +1,18 @@
+version: '3'
+services:
+  react:
+    image: create-react-app
+    build: .
+    # entrypoint: ["/bin/sh","-c"]
+    # command: 
+    # - |
+    #   npm install &&
+    #   npm run start
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "3007:3000"
+    command: npm start
+    stdin_open: true
+    tty: true
