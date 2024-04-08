@@ -37,7 +37,8 @@ module.exports = {
       // Use path.resolve for the directory path to ensure it's correct
       directory: path.resolve(__dirname, 'dist'),
     },
-    port: 3007 // The port on which the dev server will run
+    port: 3007, // The port on which the dev server will run
+    hot: true
   }
 };
 
