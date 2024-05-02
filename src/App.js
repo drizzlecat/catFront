@@ -24,9 +24,14 @@
 
 // export default App;
 import React from 'react';
+import InputForm from "./components/InputForms/InputForm";
 
 function App() {
-  return <div>Hello, World!</div>;
+  return (
+    <div>
+      <p>Hello, goodorld!</p>
+      <InputForm />
+    </div>);  
 }
 
 export default App;

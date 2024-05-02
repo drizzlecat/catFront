@@ -15,7 +15,7 @@ COPY package*.json ./
 # COPY . .
 
 # Step 6: Expose port 3000 to have it mapped by Docker daemon
-EXPOSE 3000
+# EXPOSE 3000
 
 # Step 7: Define the command to run your app
 CMD ["npm", "start"]
